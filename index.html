@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="croy.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <title>Croydon watch</title>
+</head>
+<body>
+    <div id="banner">
+        <div id="drone-box">
+        
+            <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/drone-with-camera.png" alt="drone-with-camera"/>
+            <img src="Screenshot (61)-left.png" class="left-pic">
+            <img src="Screenshot (61)-right.png" class="right-pic">
+            <h5>WE ARE AlWAYS<p>ON THE LOOK OUT<p>FOR FLY TIPPERS</p></h5>
+        </div>
+    </div>
+    <div id="Help">
+<h2>RECYCLE MORE!</h2>
+<h3>
+    <p>
+    You can save 2,400 pounds of carbon dioxide per year by recycling just half of your household waste.
+</p>
+</h3>
+<h6>HELP SAVE THE ENVIRONMENT</h6>
+
+    </div>
+    <script>
+        $('#banner').mousemove(function(e){
+            var moveX = (e.pageX * 3/4) + 160;
+            var moveY = (e.pageY * 1/2) + 190;
+            $('#drone-box').css({'transform' :'translate3d('+moveX+'px,'+moveY+'px,0)'
+
+            });
+            
+        });
+    </script>
+</body>
+</html>
