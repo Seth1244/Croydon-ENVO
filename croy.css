@@ -48,10 +48,38 @@
     text-align:center;
 }
 h5{
-    background-color:aqua;
-    color:black;
-    display:inline-block;
-    align-items:self-end;
+    
+    color:aqua;
+text-align: center;
+    align-content:flex-start;
+    font-weight: 10 rem;
+    font-size: 30px;
+    font: bolder;
+    font-family: monospace;
+    animation: blink 2s linear infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+    80%{
+        opacity: .5;
+    }
+}
+
+h5{
+    transition: 0.5s;
+}
+
+h5:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+                 0 0 20px #fff;
+                 0 0 40px #fff;
+                 0 0 80px #fff;
+                 0 0 120px #fff;
+                 0 0 160px #fff;
+
 }
 h4{
     color:red;
